@@ -40,18 +40,17 @@ def tasks_id_not_provided():
 
 @app.route('/tasks/<task_id>', methods=['GET', 'DELETE'])
 def tasks_id_yes_provided(task_id):
+    task = Task.query.filter_by(task_id=task_id).first_or_404()
     if request.method == 'DELETE':
-        task = Task.query.filter_by(task_id=task_id).first_or_404()
         db.session.delete(task)
         db.session.commit()
         return jsonify(task.as_dict())
     else:
-        task = Task.query.filter_by(task_id=task_id).first_or_404()
         return jsonify(task.as_dict())
 
 
 @app.route('/tasks/done/<task_id>', methods=['PUT'])
-def mark_task_done(task_id):
+def mark_task_as_done(task_id):
     task = Task.query.filter_by(task_id=task_id).first_or_404()
     task.task_is_done = 1
     db.session.commit()
