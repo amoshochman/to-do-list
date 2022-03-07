@@ -4,11 +4,13 @@
 
 ### An application built with Python, Flask and Flask-SQLAlchemy.
 
-A simple rest service that as opposed to other tons of similar repositories out there, avoids the use of tools like flask-restful. This use of only a few packages helps keeping the code easier to understand. If adding entities/endpoints/features. A good idea for
-a future project is to extend this to one with tools like flask-restful and marshmallow.
-
-Pytest is also used here and thanks to the fixture decorator, we're able to test the app on
-a different DB.
+A simple rest service that as opposed to other tons of similar repositories out there, 
+avoids the use of tools like flask-restful. 
+I use here only a few packages and this allowed me to keep almost all 
+the relevant code in one not very long file.<br>
+A good idea is to extend the app to one with tools like flask-restful and marshmallow,
+adding probably some entities/endpoints/features and evaluating the trade-off. Pytest is also used here and thanks to the fixture decorator, we're able to test the app on
+a different DB copy.
 
 ###### **Instructions**:
 
