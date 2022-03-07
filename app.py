@@ -6,6 +6,11 @@ from database import db
 
 app = Flask(__name__)
 
+"""
+On a bigger project, the definitions of the class inherating from the SQLAlchemy, and the views functions
+should be ideally split into two (at least) different files.
+"""
+
 
 class Task(db.Model):
     task_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
