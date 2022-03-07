@@ -4,10 +4,8 @@
 
 ### An application built with Python, Flask and Flask-SQLAlchemy.
 
-As opposed to other tons of similar repositories out there, I avoided here
-to use a tool like Flask-restful because I'm not planning 
-to adding more functionality to the app. An interesting idea for
-a future project would be adding to this one flask-restful and marshmallow.
+A simple rest service that as opposed to other tons of similar repositories out there, avoids the use of tools like flask-restful. This use of only a few packages helps keeping the code easier to understand. If adding entities/endpoints/features. A good idea for
+a future project is to extend this to one with tools like flask-restful and marshmallow.
 
 Pytest is also used here and thanks to the fixture decorator, we're able to test the app on
 a different DB.
@@ -27,7 +25,7 @@ Supported routes (defined in app.py):
 
 _/tasks_ ('GET' 'DELETE', 'POST') <br>
 Respectively, get all the tasks, delete all the tasks, post a task. In this last case, the body 
-(form) of the request needs to be with json format and have only one parameter:
+(form) of the request needs to be with json format and to have one parameter:
 _{"task_title":"<some_task>"}_
 
 _/tasks/<task_id>_ ('GET', 'DELETE') <br>
