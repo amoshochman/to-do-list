@@ -15,7 +15,9 @@ a different DB copy.
 ###### **Instructions**:
 
 - git clone the repo in your local machine
-- install the requirements - as usual, preferably in a virtual environment
+- install the requirements - as usual, preferably in a virtual environment.
+Please notice that the app was developed with Python 3.10, so that's the ideal version
+before proceeding (although it will probably work also with Python 3.9)
 - install sqlite3 in your local machine if it's not already there. You can check 
 it just running "sqlite3" on a terminal.
 
