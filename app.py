@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, jsonify, request
 
-from my_db import db
+from database import db
 
 app = Flask(__name__)
 
