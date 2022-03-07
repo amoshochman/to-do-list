@@ -30,10 +30,10 @@ Respectively, get all the tasks, delete all the tasks, post a task. In this last
 (form) of the request needs to be with json format and have only one parameter:
 _{"task_title":"<some_task>"}_
 
-_/tasks/<task_id>_ ('GET', 'DELETE'): <br>
+_/tasks/<task_id>_ ('GET', 'DELETE') <br>
 Respectively, get a task, delete a task. 
 
-_/tasks/done/<task_id>_ ('PUT'): <br>
+_/tasks/done/<task_id>_ ('PUT') <br>
 mark a task as done.
  
 That's it. The app was done mainly as an exercise so issues would not be surprising. 
